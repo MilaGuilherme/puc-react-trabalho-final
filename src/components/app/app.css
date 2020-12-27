@@ -1,5 +1,26 @@
-.App {
-  text-align: center;
+h1{
+  margin:20px;
+}
+
+main{
+  display: flex;
+  width: 100%;
+}
+
+.sidebar{
+  flex: 25% 0 1 ;
+}
+
+.mainContent{
+  flex: 75% 0 1;
+}
+
+.accordion-button{
+  font-weight: 700;
+}
+
+.accordion-collapse{
+  padding: 20px;
 }
 
 .App-logo {

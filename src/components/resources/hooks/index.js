@@ -1,1 +1,0 @@
-export { useResourceList } from './useResourceList'

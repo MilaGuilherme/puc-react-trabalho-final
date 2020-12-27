@@ -1,6 +1,6 @@
 export const SET_SPELLS = "SET_SPELLS";
 
-export const setFavourite = movie => ({
+export const setSpell = spell => ({
     type: SET_SPELLS,
-    payload: movie
+    payload: spell
 })

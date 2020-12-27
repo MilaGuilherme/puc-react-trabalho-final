@@ -1,0 +1,1 @@
+export { setSpell } from './setSpell'

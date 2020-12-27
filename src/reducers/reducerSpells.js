@@ -1,4 +1,4 @@
-import { SET_SPELLS } from '../actions/spells';
+import { SET_SPELLS } from '../actions/setSpell';
 
 const spellList = [];
 const initialState = {
@@ -8,15 +8,18 @@ const initialState = {
 export const spells = (state = initialState, action) => {
     switch (action.type) {
         case SET_SPELLS:
-            var payload =  {...action.payload.spell}
+            var payload =  action.payload.spell
             if (spellList.find(( {index})=> index === payload.index)) {
-                payload =  {};
-                return state;
+                let i = spellList.findIndex(( {index})=> index === payload.index)
+                var l = spellList.splice(i,1)
+                return {
+                    ...state,
+                    l
+                }
             }
 
             else { 
             spellList.push(payload);
-            console.log(spellList);
             return {
                 ...state,
                 spellList

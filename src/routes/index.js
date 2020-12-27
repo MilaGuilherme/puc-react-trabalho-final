@@ -1,0 +1,1 @@
+export { ResourceRoute } from './resourceRoute'
